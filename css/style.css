@@ -355,3 +355,147 @@ padding-top: 20px;
     display: inline-block;
     padding: 10px;
 }
+
+#cssGridPage{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "cssgridheader"
+        "cssgridcontenedordeproductosconfiltro"
+        "cssgridfooter"
+    ;
+
+}
+
+#cssGridHeader{
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    grid-area: cssgridheader;
+
+}
+
+#cssGridHeader header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+} 
+
+#cssGridHeader header .list-item a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    padding: 15px;   
+
+
+}
+
+#cssGridContenedorDeProductosConFiltro{
+    background-color: lightskyblue;
+    grid-area: cssgridcontenedordeproductosconfiltro;
+ 
+
+}
+
+
+
+
+#cssGridFooter{
+    background-color: rgb(182, 182, 175);
+    color: black;
+    padding: 30px;
+    grid-area: cssgridfooter;
+
+}
+
+
+#cssGridFooter .contenedor-de-footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+#cssGridFooter .seccion-de-footer{
+    width: 30%;    
+}
+
+#cssGridFooter .seccion-de-footer h6{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#cssGridFooter .seccion-de-footer p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#cssGridFooter .seccion-de-footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+#cssGridFooter .seccion-de-footer ul li{
+    margin-bottom: 8px;
+    
+}
+
+#cssGridFooter .seccion-de-footer ul li a{
+    color: black;    
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#cssGridFooter .iconos-de-redes{
+    display: flex;
+}
+
+#cssGridFooter .iconos-de-redes li{
+    margin-right: 10px;
+}
+
+#cssGridFooter .iconos-de-redes a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#cssGridFooter .iconos-png{
+    width: 40px;
+    height: 40px;
+}
+
+#cssGridFooter .fin-del-footer{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+#filtroContainer{
+    background-color: blue;
+}
+
+#productosContainer{
+    background-color: maroon; 
+}
+
+
+
+
+
+
+
+
+
+
