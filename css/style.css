@@ -463,11 +463,19 @@ padding-top: 20px;
     margin-bottom: 30px;
 }
 
+#contenedorDeProducto{
+    background-color: palevioletred;
+    padding: 20px;
+}
 
+#cssGridHeaderDetalleProducto{
+    z-index: 1000;
+}
 
+#carouselExampleCaptions{
+    margin: 20px;
 
-
-
+}
 
 
 
