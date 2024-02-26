@@ -1,5 +1,5 @@
 @font-face {
-    font-family: redhat;
+    font-family: redhat ;
     src: url(../tipografia/red-hat-display-variable.ttf);
 }
 
@@ -70,6 +70,7 @@ main{
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 15px;
+
 }
 
 #hero .recuadro-gris p{
@@ -380,7 +381,6 @@ padding-top: 20px;
 }
 
 #cssGridContenedorDeProductosConFiltro{
-    background-color: lightskyblue;
     grid-area: cssgridcontenedordeproductosconfiltro;
 }
 
@@ -455,7 +455,7 @@ padding-top: 20px;
 }
 
 #productosContainer{
-    background-color: maroon; 
+    background-color: gainsboro; 
     padding: 30px;
 }
 
@@ -476,6 +476,8 @@ padding-top: 20px;
     margin: 20px;
 
 }
-
+.bk-grey{
+    background-color: rgb(182, 182, 175);
+}
 
 
