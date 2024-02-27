@@ -20,7 +20,9 @@ header{
     justify-content: center;
     align-items: center;
     background-color: black;
+    z-index:1000;
 }
+
 
 header ul{
     display: flex;
@@ -31,12 +33,14 @@ header ul{
     text-decoration: none;
 } 
 
+
 header .list-item a{
     text-decoration: none;
     font-size: 18px;
     font-weight: 800;
     color: white;
-    padding: 15px;   
+    padding: 15px;
+    
 }
 
 main{
@@ -338,18 +342,18 @@ padding-top: 20px;
     padding: 10px;
 }
 
-#cssGridPage{
+.gridpage{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas:
-        "cssgridheader"
-        "cssgridcontenedordeproductosconfiltro"
-        "cssgridfooter"
+        "gridheader"
+        "gridcontenedordeproductosconfiltro"
+        "gridfooter"
     ;
 }
 
-#cssGridHeader{
+.gridheader{
     height: 75px;
     width: 100%;
     position: fixed;
@@ -359,11 +363,11 @@ padding-top: 20px;
     justify-content: center;
     align-items: center;
     background-color: black;
-    grid-area: cssgridheader;
+    grid-area: gridheader;
     z-index:1000;
 }
 
-#cssGridHeader header ul{
+.gridheader header ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -372,7 +376,7 @@ padding-top: 20px;
     text-decoration: none;
 } 
 
-#cssGridHeader header .list-item a{
+.gridheader header .list-item a{
     text-decoration: none;
     font-size: 18px;
     font-weight: 800;
@@ -380,72 +384,72 @@ padding-top: 20px;
     padding: 15px;   
 }
 
-#cssGridContenedorDeProductosConFiltro{
-    grid-area: cssgridcontenedordeproductosconfiltro;
+.gridcontenedordeproductosconfiltro{
+    grid-area: gridcontenedordeproductosconfiltro;
 }
 
-#cssGridFooter{
+.gridfooter{
     background-color: rgb(182, 182, 175);
     color: black;
     padding: 30px;
-    grid-area: cssgridfooter;
+    grid-area: gridfooter;
 }
 
-#cssGridFooter .contenedor-de-footer{
+.gridfooter .contenedor-de-footer{
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin: 0 auto;  
 }
 
-#cssGridFooter .seccion-de-footer{
+.gridfooter .seccion-de-footer{
     width: 30%;    
 }
 
-#cssGridFooter .seccion-de-footer h6{
+.gridfooter .seccion-de-footer h6{
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-#cssGridFooter .seccion-de-footer p{
+.gridfooter .seccion-de-footer p{
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-#cssGridFooter .seccion-de-footer ul{
+.gridfooter .seccion-de-footer ul{
     list-style: none;
     padding: 0;
 }
 
-#cssGridFooter .seccion-de-footer ul li{
+.gridfooter .seccion-de-footer ul li{
     margin-bottom: 8px;  
 }
 
-#cssGridFooter .seccion-de-footer ul li a{
+.gridfooter .seccion-de-footer ul li a{
     color: black;    
     text-decoration: none;
     font-weight: 600;
 }
 
-#cssGridFooter .iconos-de-redes{
+.gridfooter .iconos-de-redes{
     display: flex;
 }
 
-#cssGridFooter .iconos-de-redes li{
+.gridfooter .iconos-de-redes li{
     margin-right: 10px;
 }
 
-#cssGridFooter .iconos-de-redes a{
+.gridfooter .iconos-de-redes a{
     font-size: 20px;
     text-decoration: none;
 }
 
-#cssGridFooter .iconos-png{
+.gridfooter .iconos-png{
     width: 40px;
     height: 40px;
 }
 
-#cssGridFooter .fin-del-footer{
+.gridfooter .fin-del-footer{
     margin-top: 20px;
     text-align: center;  
 }
@@ -464,7 +468,7 @@ padding-top: 20px;
 }
 
 #contenedorDeProducto{
-    background-color: palevioletred;
+    background-color: gainsboro;
     padding: 20px;
 }
 
@@ -477,7 +481,57 @@ padding-top: 20px;
 
 }
 .bk-grey{
-    background-color: rgb(182, 182, 175);
+    background-color: black;
 }
 
+.h-carrusel{
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+}
 
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel{
+    max-height: 400px;
+}
+
+.carousel-inner{
+    max-height: 400px;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    height: 400px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    height: 50px;
+    width: 5opx;
+}
+
+.carousel-item .h-carrusel.white-text{
+    color: white;
+}
+
+.carousel-caption{
+    display: fex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-caption .h-carrusel{
+    margin: 40px;
+    color: white;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+}

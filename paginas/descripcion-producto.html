@@ -8,18 +8,26 @@
         <link rel="stylesheet" href="../css/style.css">
         <title>Producto #número</title>
     </head>
-    <body>
-        <header id="cssGridHeaderDetalleProducto">
-            <nav>
-                <ul>
-                    <li class="list-item"><a href="../index.html">Inicio</a></li>
-                    <li class="list-item"><a href="./productos.html">Productos</a></li>
-                    <li class="list-item"><a href="./consejos.html">Consejos</a></li>
-                    <li class="list-item"><a href="./contacto.html">Contacto</a></li>
-                </ul>      
-            </nav>            
-        </header>
-        <main>
+    <body class="gridpage">
+        <header> 
+            <div class="container-fluid padding-top-bottom-0">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+    
+                          <nav class="navbar justify-content-center" style="background-color: black;">
+                            <ul>
+                                <li class="list-item"><a href="../index.html">Inicio</a></li>
+                                <li class="list-item"><a href="./paginas/productos.html">Productos</a></li>
+                                <li class="list-item"><a href="./paginas/consejos.html">Consejos</a></li>
+                                <li class="list-item"><a href="./paginas/contacto.html">Contacto</a></li>
+                            </ul> 
+                          </nav>
+                    </div>
+                </div>
+            </div>        
+          </header> 
+
+        <main class="gridcontenedordeproductosconfiltro">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-10">
@@ -31,57 +39,56 @@
                                 </div>
                                 <div class="col-12 col-md-5" >
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <h5 class="card-title">Pulsera Groumet</h5>
+                                        <p class="card-text"><p>MATERIAL: Plata 925</p><p>LARGO: 22cm</p><p>ANCHO: 1cm</p><p>Incluye sello y garantía del material.</p> 
                                       </div>
-                                      <a href="./descripcion-producto.html" class="btn btn-primary">Go somewhere</a>
+                                      <a href="./descripcion-producto.html" class="btn btn-primary">Añadir al carrito</a>
                                 </div>
                             </div>
-                            <br>
-                            <div class="row justify-content-center">
-                                <div class="col-8">
-                                    <div id="carouselExampleCaptions" class="carousel slide">
-                                        <div class="carousel-indicators">
-                                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                          <div class="carousel-item active">
-                                            <img src="../imagenes/productos/producto1.webp" class="d-block w-100" alt="...">
-                                            <div class="carousel-caption d-none d-md-block">
-                                              <h5>First slide label</h5>
-                                              <p>Some representative placeholder content for the first slide.</p>
-                                            </div>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="../imagenes/productos/producto1.webp" class="d-block w-100" alt="...">
-                                            <div class="carousel-caption d-none d-md-block">
-                                              <h5>Second slide label</h5>
-                                              <p>Some representative placeholder content for the second slide.</p>
-                                            </div>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="../imagenes/productos/producto1.webp" class="d-block w-100" alt="...">
-                                            <div class="carousel-caption d-none d-md-block">
-                                              <h5>Third slide label</h5>
-                                              <p>Some representative placeholder content for the third slide.</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                          <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                          <span class="visually-hidden">Next</span>
-                                        </button>
-                                      </div>
-                                </div>
-
-                            </div>
+                            <br>                          
                         </div>     
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bk-grey">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../imagenes/productos/pulsera-cuero-5.jpg" class="d-block w-100" alt="Pulsera de cuero">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5 class="h-carrusel">Pulsera de cuero</h5>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../imagenes/productos/pulsera-onix-1.jpg" class="d-block w-100" alt="Pulsera Onix">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5 class="h-carrusel">Pulsera Onix</h5>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../imagenes/productos/pulsera-onix-2.jpg" class="d-block w-100" alt="Pulsera Piedras">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5 class="h-carrusel white-text">Pulsera Piedras</h5>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -90,7 +97,7 @@
 
 
 
-        <footer>
+        <footer class="gridfooter">
             <div class="contenedor-de-footer">
                 <div class="seccion-de-footer">
                     <h6>Contacto</h6>
