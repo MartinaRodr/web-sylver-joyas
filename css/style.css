@@ -544,12 +544,18 @@ padding-top: 20px;
 }
 
 .boton-hamburguesa{
-    display: flex;
+    display: none;
     align-content: flex-start;
     position: absolute;
     left:0%   
 
 }
+
+.desktop-nav{
+    display: flex;
+}
+
+
 
 #navbarToggleExternalContent ul{
     display: flex;
@@ -559,30 +565,29 @@ padding-top: 20px;
     list-style-type: none;
     text-decoration: none;
     margin-top: 250px;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 #navbarToggleExternalContent li{
-    padding: 10px;
-    
+    padding: 10px;   
 }
-
 
 .navbar-toggler{
     background-color: black;
-
+   
 }
+
 
 
 @media (max-width: 480px){
     .boton-hamburguesa{
         display: flex;
     }
-
-    .navbar-links{
+    .desktop-nav{
         display: none;
     }
+
+   
 
 }
 
